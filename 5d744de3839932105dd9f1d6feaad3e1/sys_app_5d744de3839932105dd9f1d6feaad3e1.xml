@@ -15,7 +15,7 @@
         <license_model>none</license_model>
         <logo/>
         <menu/>
-        <name>Customer Suc</name>
+        <name>Customer Success Story Manager</name>
         <package_json display_value="x_1874299_customer/x-1874299-customer-suc/1.0.0/package.json" path="x_1874299_customer/x-1874299-customer-suc/1.0.0/package.json">x_1874299_customer/x-1874299-customer-suc/1.0.0/package.json</package_json>
         <private>false</private>
         <restrict_table_access>false</restrict_table_access>
@@ -32,9 +32,9 @@
         <sys_created_by/>
         <sys_created_on/>
         <sys_id>5d744de3839932105dd9f1d6feaad3e1</sys_id>
-        <sys_mod_count/>
-        <sys_updated_by/>
-        <sys_updated_on/>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-24 23:39:22</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
