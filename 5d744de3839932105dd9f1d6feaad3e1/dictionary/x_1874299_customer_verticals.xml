@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1608cdeb839932105dd9f1d6feaad347" label="Verticals" max_length="40" name="x_1874299_customer_verticals" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="1000" name="description" type="string"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Vertical Name" mandatory="true" max_length="200" name="name" type="string"/>
+    </element>
+</database>

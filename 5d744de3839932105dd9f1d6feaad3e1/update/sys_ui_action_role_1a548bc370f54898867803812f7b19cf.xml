@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-24 22:33:08</sys_created_on>
+        <sys_id>1a548bc370f54898867803812f7b19cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Complete 90-Day Follow-up.</sys_name>
+        <sys_package display_value="Customer Suc" source="x_1874299_customer">5d744de3839932105dd9f1d6feaad3e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Suc">5d744de3839932105dd9f1d6feaad3e1</sys_scope>
+        <sys_ui_action display_value="Complete 90-Day Follow-up">f96d74281299473eb0c7ebdc2989b0e1</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_1a548bc370f54898867803812f7b19cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-24 22:33:08</sys_updated_on>
+        <sys_user_role display_value="x_1874299_customer.success_story_submitter" name="x_1874299_customer.success_story_submitter">50ab3e0690154c7785fec44fcd40d4c5</sys_user_role>
+    </sys_ui_action_role>
+</record_update>

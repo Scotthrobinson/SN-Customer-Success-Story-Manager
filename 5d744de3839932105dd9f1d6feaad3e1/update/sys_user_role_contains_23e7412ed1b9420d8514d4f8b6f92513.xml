@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_1874299_customer.success_story_submitter" name="x_1874299_customer.success_story_submitter">50ab3e0690154c7785fec44fcd40d4c5</contains>
+        <role display_value="x_1874299_customer.practice_reviewer" name="x_1874299_customer.practice_reviewer">1e7aad22cbfc4fe19a3a83e8fa522491</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-24 22:33:09</sys_created_on>
+        <sys_id>23e7412ed1b9420d8514d4f8b6f92513</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1874299_customer.success_story_submitter.x_1874299_customer.practice_reviewer</sys_name>
+        <sys_package display_value="Customer Suc" source="x_1874299_customer">5d744de3839932105dd9f1d6feaad3e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Suc">5d744de3839932105dd9f1d6feaad3e1</sys_scope>
+        <sys_update_name>sys_user_role_contains_23e7412ed1b9420d8514d4f8b6f92513</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-24 22:33:09</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>
