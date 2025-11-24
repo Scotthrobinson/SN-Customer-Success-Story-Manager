@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-24 22:33:08</sys_created_on>
+        <sys_id>38b2c15b3f834d2ea56d85543e194d65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approve Marketing Review.</sys_name>
+        <sys_package display_value="Customer Suc" source="x_1874299_customer">5d744de3839932105dd9f1d6feaad3e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Suc">5d744de3839932105dd9f1d6feaad3e1</sys_scope>
+        <sys_ui_action display_value="Approve Marketing Review">ae1cb4dc63c54870b0cf800d4b51a577</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_38b2c15b3f834d2ea56d85543e194d65</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-24 22:33:08</sys_updated_on>
+        <sys_user_role display_value="x_1874299_customer.marketing_reviewer" name="x_1874299_customer.marketing_reviewer">3c3bf18325934f9cada49d1f2e172c68</sys_user_role>
+    </sys_ui_action_role>
+</record_update>

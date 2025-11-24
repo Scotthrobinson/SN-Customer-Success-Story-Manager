@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="31084963839932105dd9f1d6feaad3a1" label="Success Stories" max_length="40" name="x_1874299_customer_success_stories" type="collection">
+        <element attributes="encode_utf8=false" label="Engagement Manager Name" mandatory="true" max_length="32" name="engagement_manager" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Customer Country" max_length="100" name="customer_country" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="draft" label="Success Story Status" mandatory="true" max_length="50" name="status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Work in Progress" sequence="1" value="work_in_progress"/>
+                <element inactive_on_update="false" label="Marketing Review" sequence="5" value="marketing_review"/>
+                <element inactive_on_update="false" label="Pending Client Information" sequence="2" value="pending_client_info"/>
+                <element inactive_on_update="false" label="Pending 30 Day Follow-up" sequence="6" value="pending_30_day"/>
+                <element inactive_on_update="false" label="Technical Review" sequence="3" value="technical_review"/>
+                <element inactive_on_update="false" label="Pending 90 Day Follow-up" sequence="7" value="pending_90_day"/>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="draft"/>
+                <element inactive_on_update="false" label="Practice Review" sequence="4" value="practice_review"/>
+                <element inactive_on_update="false" label="Closed" sequence="8" value="closed"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Go Live Date" max_length="40" name="go_live_date" type="glide_date"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Select ServiceNow products used as part of this project" max_length="4000" name="servicenow_products" reference="x_1874299_customer_products" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="Was a Business Case or Value Assessment created? If so please provide." max_length="4000" name="business_case_created" type="string"/>
+        <element label="Submitted to ServiceNow" max_length="40" name="submitted_to_servicenow" type="boolean"/>
+        <element label="Submitted to Corporate Marketing" max_length="40" name="submitted_to_marketing" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Customer State/Province" max_length="100" name="customer_state_province" type="string"/>
+        <element attributes="encode_utf8=false" label="Customer Industry Vertical" max_length="32" name="customer_vertical" reference="x_1874299_customer_verticals" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Describe customer's pain points, business challenges and objectives" max_length="4000" name="customer_pain_points" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Was Peer Benchmarking provided to the customer? If so please provide." max_length="4000" name="peer_benchmarking" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Why was ServiceNow chosen?" max_length="4000" name="why_servicenow_chosen" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="What Business Value was realized and ROI achieved?" max_length="4000" name="business_value_roi" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Type Of Win" max_length="50" name="type_of_win" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Reseller" sequence="1" value="reseller"/>
+                <element inactive_on_update="false" label="Build" sequence="2" value="build"/>
+                <element inactive_on_update="false" label="Consulting &amp; Implementation" sequence="3" value="consulting_implementation"/>
+                <element inactive_on_update="false" label="Service Provider" sequence="0" value="service_provider"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Customer City" max_length="100" name="customer_city" type="string"/>
+        <element label="Has customer agreed to be a reference?" max_length="40" name="customer_reference_agreed" type="boolean"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="List of ServiceNow competitors considered or displaced" max_length="4000" name="competitors_considered" reference="x_1874299_customer_competitors" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="Why does this story stands out as significant customer success?" max_length="4000" name="significance" type="string"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Additional Team Members" max_length="4000" name="additional_team_members" reference="sys_user" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="Actions that contributed to the customer success" max_length="4000" name="success_actions" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Notes" max_length="4000" name="notes" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Success Story Name" mandatory="true" max_length="255" name="success_story_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Customer Name" mandatory="true" max_length="255" name="customer_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Deployment Number" max_length="50" name="deployment_number" type="string"/>
+        <index name="index">
+            <element name="customer_vertical"/>
+        </index>
+        <index name="index2">
+            <element name="engagement_manager"/>
+        </index>
+    </element>
+</database>

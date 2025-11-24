@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_module">
+    <sys_module action="INSERT_OR_UPDATE">
+        <content><![CDATA[import { gs, GlideRecord } from '@servicenow/glide'
+
+/**
+ * Handles workflow transitions for success stories
+ */
+export function handleWorkflowTransition(current, previous) {
+    const currentStatus = current.getValue('status');
+    const previousStatus = previous ? previous.getValue('status') : '';
+    
+    // Only process if status actually changed
+    if (currentStatus === previousStatus) {
+        return;
+    }
+
+    // Log the status change
+    gs.info(`Success Story ${current.getDisplayValue()} status changed from ${previousStatus} to ${currentStatus}`);
+
+    // Handle specific workflow transitions
+    switch (currentStatus) {
+        case 'technical_review':
+            // Assign to technical reviewers
+            gs.addInfoMessage('Success story submitted for technical review');
+            break;
+            
+        case 'practice_review':
+            // Assign to practice reviewers
+            gs.addInfoMessage('Success story moved to practice review');
+            break;
+            
+        case 'marketing_review':
+            // Assign to marketing reviewers
+            gs.addInfoMessage('Success story moved to marketing review');
+            break;
+            
+        case 'work_in_progress':
+            // Back to engagement manager for additional work
+            gs.addInfoMessage('Success story returned to engagement manager for additional details');
+            break;
+            
+        case 'pending_30_day':
+            gs.addInfoMessage('Success story ready for 30-day follow-up');
+            break;
+            
+        case 'pending_90_day':
+            gs.addInfoMessage('Success story ready for 90-day follow-up');
+            break;
+            
+        case 'closed':
+            gs.addInfoMessage('Success story has been closed');
+            break;
+    }
+}
+
+/**
+ * Handles notes updates and creates history
+ */
+export function handleNotesUpdate(current, previous) {
+    const currentNotes = current.getValue('notes');
+    const previousNotes = previous ? previous.getValue('notes') : '';
+    
+    // If notes field was updated and not empty
+    if (currentNotes && currentNotes !== previousNotes) {
+        // Log the notes update
+        gs.info(`Notes updated for success story ${current.getDisplayValue()}`);
+        
+        // You could create a separate notes history table here if needed
+        // For now, we'll rely on the audit trail
+    }
+}]]></content>
+        <external_source>false</external_source>
+        <path>x_1874299_customer/x-1874299-customer-suc/1.0.0/src/server/workflow-handlers.js</path>
+        <sys_class_name>sys_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-24 22:33:08</sys_created_on>
+        <sys_id>782767738a7842429f2db14486ebdc87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1874299_customer/x-1874299-customer-suc/1.0.0/src/server/workflow-handlers.js</sys_name>
+        <sys_package display_value="Customer Suc" source="x_1874299_customer">5d744de3839932105dd9f1d6feaad3e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Suc">5d744de3839932105dd9f1d6feaad3e1</sys_scope>
+        <sys_update_name>sys_module_782767738a7842429f2db14486ebdc87</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-24 22:33:08</sys_updated_on>
+    </sys_module>
+</record_update>

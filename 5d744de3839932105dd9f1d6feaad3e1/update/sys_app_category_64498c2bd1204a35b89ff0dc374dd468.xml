@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app_category">
+    <sys_app_category action="INSERT_OR_UPDATE">
+        <default_order/>
+        <name>customer_success</name>
+        <style>border-color: #2c5aa0; background-color: #e6f3ff;</style>
+        <sys_class_name>sys_app_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-24 22:33:08</sys_created_on>
+        <sys_id>64498c2bd1204a35b89ff0dc374dd468</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>customer_success</sys_name>
+        <sys_package display_value="Customer Suc" source="x_1874299_customer">5d744de3839932105dd9f1d6feaad3e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Suc">5d744de3839932105dd9f1d6feaad3e1</sys_scope>
+        <sys_update_name>sys_app_category_64498c2bd1204a35b89ff0dc374dd468</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-24 22:33:08</sys_updated_on>
+    </sys_app_category>
+</record_update>

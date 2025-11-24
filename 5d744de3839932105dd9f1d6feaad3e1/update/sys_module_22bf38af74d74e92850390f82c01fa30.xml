@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_module">
+    <sys_module action="INSERT_OR_UPDATE">
+        <content><![CDATA[{
+  "name": "x-1874299-customer-suc",
+  "version": "1.0.0",
+  "description": "[BUILD AGENT GENERATED]:  Application to track and manage customer success stories through their lifecycle from draft to completion, including reviews and follow-ups",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "now-sdk build",
+    "deploy": "now-sdk install",
+    "transform": "now-sdk transform",
+    "types": "now-sdk dependencies"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@servicenow/sdk": "4.0.2",
+    "@servicenow/glide": "26.0.1",
+    "eslint": "8.50.0",
+    "@servicenow/eslint-plugin-sdk-app-plugin": "4.0.2"
+  }
+}]]></content>
+        <external_source>false</external_source>
+        <path>x_1874299_customer/x-1874299-customer-suc/1.0.0/package.json</path>
+        <sys_class_name>sys_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-24 22:33:08</sys_created_on>
+        <sys_id>22bf38af74d74e92850390f82c01fa30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1874299_customer/x-1874299-customer-suc/1.0.0/package.json</sys_name>
+        <sys_package display_value="Customer Suc" source="x_1874299_customer">5d744de3839932105dd9f1d6feaad3e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Customer Suc">5d744de3839932105dd9f1d6feaad3e1</sys_scope>
+        <sys_update_name>sys_module_22bf38af74d74e92850390f82c01fa30</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-24 22:33:08</sys_updated_on>
+    </sys_module>
+</record_update>
